@@ -1,0 +1,213 @@
+/* Basic reset */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Chat message container */
+#chat-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Base style for all messages */
+.message {
+    padding: 12px 18px;
+    border-radius: 18px;
+    max-width: 70%;
+    line-height: 1.5;
+}
+
+/* User's message bubble */
+.user-message {
+    background-color: #007aff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+/* AI's message bubble */
+.ai-message {
+    background-color: #ffffff;
+    color: #222;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+
+/* Style for the "council's work" */
+.council-work {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+.council-work strong {
+    color: #555;
+}
+
+/* Loading spinner */
+.loading {
+    align-self: flex-start;
+    padding: 10px;
+}
+
+/* Input area at the bottom */
+#input-area {
+    display: flex;
+    padding: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+#queryInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#askButton {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007aff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#askButton:hover {
+    background-color: #0056b3;
+}
+
+/* Basic reset */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Chat message container */
+#chat-container {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Base style for all messages */
+.message {
+    padding: 12px 18px;
+    border-radius: 18px;
+    max-width: 70%;
+    line-height: 1.5;
+    display: flex; /* Changed */
+    flex-direction: column; /* Changed */
+}
+
+/* User's message bubble */
+.user-message {
+    background-color: #007aff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+/* AI's message bubble */
+.ai-message {
+    background-color: #ffffff;
+    color: #222;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+    border: 1px solid #e5e5e5;
+}
+
+/* NEW: Holds the main message text */
+.message-content {
+    margin-bottom: 5px; /* Adds space between text and timestamp */
+}
+
+/* NEW: Styles the timestamp */
+.timestamp {
+    font-size: 0.75em;
+    color: #ffffff99; /* Light color for user */
+    align-self: flex-end; /* Pushes to the right */
+}
+
+.ai-message .timestamp {
+    color: #888; /* Darker color for AI */
+}
+
+/* NEW: Styles the AI response time */
+.response-time {
+    font-size: 0.8em;
+    font-style: italic;
+    color: #666;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Style for the "council's work" */
+.council-work {
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #ccc;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+.council-work strong {
+    color: #555;
+}
+
+/* Loading spinner */
+.loading {
+    align-self: flex-start;
+    padding: 10px;
+}
+
+/* Input area at the bottom */
+#input-area {
+    display: flex;
+    padding: 15px;
+    background-color: #ffffff;
+    border-top: 1px solid #ddd;
+}
+
+#queryInput {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#askButton {
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #007aff;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+#askButton:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,8 @@
+{
+    "name": "Offline AI Council",
+    "short_name": "AI Council",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "theme_color": "#000"
+  }
